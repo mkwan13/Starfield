@@ -3,7 +3,7 @@ Particle[] particles;
 PImage taylor, meredith, olivia, music;
 void setup()
 {
-	size(800, 800);
+	size(500, 500);
 	background(170, 255, 255);
 	particles = new Particle[200];
 
@@ -60,7 +60,7 @@ class NormalParticle implements Particle
 	}
 	public void show()
 	{
-		image(music, (int)x, (int)y, 30, 30);
+		image(music, (int)x, (int)y, 20, 30);
 	}
 }
 
@@ -75,8 +75,8 @@ class OddballParticle implements Particle//uses an interface
 	int x, y, angle, speed;
 	OddballParticle()
 	{
-		x = (int)(Math.random()*800);
-		y = (int)(Math.random()*800);
+		x = (int)(Math.random()*500);
+		y = (int)(Math.random()*500);
 	}
 	public void move()
 	{
