@@ -5,7 +5,7 @@ void setup()
 {
 	size(500, 500);
 	background(170, 255, 255);
-	particles = new Particle[200];
+	particles = new Particle[150];
 
 	for (int i=0; i<particles.length; i++)
 	{
@@ -47,8 +47,8 @@ class NormalParticle implements Particle
 	NormalParticle()
 	{
 		speed = Math.random()*15;
-		x = 400;
-		y = 400;
+		x = 250;
+		y = 250;
 		size = 3;
 		angle = Math.random()*2*Math.PI;
 	}
